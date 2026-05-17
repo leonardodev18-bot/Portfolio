@@ -13,7 +13,7 @@
 
 <body class="bg-dark text-white">
   <!-- nav bar -->
-  <nav class="navbar navbar-expand-lg bg-primary p-2 text-white bg-opacity-25  text-white ">
+  <nav class="navbar navbar-expand-lg bg-primary p-2 text-white bg-opacity-25  text-white fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand text-white padding" href="#">Leonardo Alves</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -23,13 +23,13 @@
       <div class="collapse navbar-collapse justify-content-end nav-underline" id="navbarNav">
         <ul class="navbar-nav w-10 p-2">
           <li class="nav-item">
-            <a class="nav-link active text-white " aria-current="page" href="#">Habilidades</a>
+            <a class="nav-link active text-white " aria-current="page" href="#habilidades">Habilidades</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Projetos</a>
+            <a class="nav-link text-white" href="#projetos">Projetos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Sobre Mim</a>
+            <a class="nav-link text-white" href="#contatos">Contatos</a>
           </li>
         </ul>
       </div>
@@ -38,7 +38,7 @@
 
   <!-- Main Section -->
   <main class="mt-5 mb-5">
-    <div class="row align-items-center">
+    <div class="row align-items-center ">
 
       <!-- Logo -->
       <div class="col-md-4 text-center">
@@ -61,141 +61,146 @@
           e JavaScript. Experiência na construção de interfaces intuitivas,
           integração de sistemas e boas práticas de desenvolvimento.
         </p>
-        <button type="button" class="btn btn-outline-primary">Contatos</button>
+        <a href="#contatos">
+          <button type="button" class="btn btn-outline-primary">Contatos</button>
+        </a>
       </div>
 
       <!-- HABILIDADES -->
+      <section id="habilidades">
+        <h1 class="fs-1 ms-5">Minhas Habilidades</h1>
 
-      <h1 class="fs-1 ms-5">Minhas Habilidades</h1>
+        <!-- Linha -->
+        <div class="linha flex-grow-1 ms-5"></div>
 
-      <!-- Linha -->
-      <div class="linha flex-grow-1 ms-5"></div>
+        <div class="container text-center ms-5">
 
-
-      <div class="container text-center ms-5">
-
-        <div class="row g-2 justify-content-center">
-          <!-- cards  -->
-          <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
-            <img src="./img/C.png" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">C#</h5>
-              <p class="card-text">Possuo conhecimentos em C#, desenvolvendo aplicações com orientação a objetos,
-                integração com bancos de dados e criação de sistemas utilizando .NET.</p>
+          <div class="row g-2 justify-content-center">
+            <!-- cards  -->
+            <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
+              <img src="./img/C.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">C#</h5>
+                <p class="card-text">Possuo conhecimentos em C#, desenvolvendo aplicações com orientação a objetos,
+                  integração com bancos de dados e criação de sistemas utilizando .NET.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
-            <img src="./img/NET.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">.NET</h5>
-              <p class="card-text">Possuo conhecimentos em .NET para desenvolvimento de aplicações web e APIs,
-                utilizando boas práticas, arquitetura em camadas e integração com bancos de dados.</p>
+            <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
+              <img src="./img/NET.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">.NET</h5>
+                <p class="card-text">Possuo conhecimentos em .NET para desenvolvimento de aplicações web e APIs,
+                  utilizando boas práticas, arquitetura em camadas e integração com bancos de dados.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5" style="width: 18rem;">
-            <img src="./img/entityframework.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ENTITY FRAMENWORK</h5>
-              <p class="card-text">Possuo conhecimentos em Entity Framework para mapeamento objeto-relacional (ORM),
-                manipulação de dados e integração eficiente com bancos de dados utilizando .NET.</p>
+            <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5" style="width: 18rem;">
+              <img src="./img/entityframework.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ENTITY FRAMENWORK</h5>
+                <p class="card-text">Possuo conhecimentos em Entity Framework para mapeamento objeto-relacional (ORM),
+                  manipulação de dados e integração eficiente com bancos de dados utilizando .NET.</p>
+              </div>
             </div>
-          </div>
 
-          <!-- quebra de coluna -->
-          <div class="w-100"></div>
-          <!-- fim da quebra -->
+            <!-- quebra de coluna -->
+            <div class="w-100"></div>
+            <!-- fim da quebra -->
 
-          <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
-            <img src="./img/WCF.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">WCF</h5>
-              <p class="card-text">Possuo conhecimentos em WCF para desenvolvimento de serviços e comunicação entre
-                aplicações, utilizando integração segura e troca de dados em sistemas distribuídos.
-              </p>
-              </p>
+            <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
+              <img src="./img/WCF.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">WCF</h5>
+                <p class="card-text">Possuo conhecimentos em WCF para desenvolvimento de serviços e comunicação entre
+                  aplicações, utilizando integração segura e troca de dados em sistemas distribuídos.
+                </p>
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">SQLServer</h5>
-              <p class="card-text">Possuo conhecimentos em SQL Server para modelagem de bancos de dados, criação de
-                consultas SQL, procedures e gerenciamento eficiente de informações.</p>
+            <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SQLServer</h5>
+                <p class="card-text">Possuo conhecimentos em SQL Server para modelagem de bancos de dados, criação de
+                  consultas SQL, procedures e gerenciamento eficiente de informações.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ASP</h5>
-              <p class="card-text">Possuo conhecimentos em ASP.NET para desenvolvimento de aplicações web dinâmicas,
-                criação de APIs e construção de sistemas utilizando o ecossistema .NET.</p>
+            <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ASP</h5>
+                <p class="card-text">Possuo conhecimentos em ASP.NET para desenvolvimento de aplicações web dinâmicas,
+                  criação de APIs e construção de sistemas utilizando o ecossistema .NET.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- PROJETOS -->
-      <h1 class="fs-1 ms-5">Meus Projetos</h1>
+      <section id="projetos">
+        <!-- PROJETOS -->
+        <h1 class="fs-1 ms-5">Meus Projetos</h1>
 
-      <!-- Linha -->
-      <div class="linha flex-grow-1 ms-5"></div>
+        <!-- Linha -->
+        <div class="linha flex-grow-1 ms-5"></div>
 
 
-      <div class="container text-center ms-5">
+        <div class="container text-center ms-5">
 
-        <div class="row g-2 justify-content-center">
-          <!-- cards  -->
-          <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">proj1</h5>
-              <p class="card-text"></p>
+          <div class="row g-2 justify-content-center">
+            <!-- cards  -->
+            <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
+              <img src="" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">proj1</h5>
+                <p class="card-text"></p>
+              </div>
             </div>
-          </div>
 
-          <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">proj2</h5>
-              <p class="card-text"></p>
+            <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5 me-5" style="width: 18rem;">
+              <img src="" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">proj2</h5>
+                <p class="card-text"></p>
+              </div>
             </div>
-          </div>
 
-          <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">proj3</h5>
-              <p class="card-text"></p>
+            <div class="card bg-primary p-2 text-white bg-opacity-25 mt-5 col-md-5" style="width: 18rem;">
+              <img src="" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">proj3</h5>
+                <p class="card-text"></p>
+              </div>
             </div>
-          </div>
 
-          <!-- quebra de coluna -->
-          <div class="w-100"></div>
-          <!-- fim da quebra -->
+            <!-- quebra de coluna -->
+            <div class="w-100"></div>
+            <!-- fim da quebra -->
+          </div>
         </div>
-      </div>
-
+      </section>
       <!-- CONTATOS -->
-      <h1 class="fs-1 ms-5">Meus Contatos</h1>
-      <!-- Linha -->
-      <div class="linha flex-grow-1 ms-5"></div>
+      <section id="contatos">
+        <h1 class="fs-1 ms-5">Meus Contatos</h1>
+        <!-- Linha -->
+        <div class="linha flex-grow-1 ms-5"></div>
 
-      <div class="d-flex align-items-center ms-5 mt-3">
-        <img src="./img/ligar.png" style="width: 40px;" class="me-3">
-        <h5 class="card-title">(11 96576-9335)</h5>
-      </div>
-      <div class="d-flex align-items-center ms-5 mt-3">
-        <img src="./img/github.png" style="width: 40px;" class="me-3">
-        <h5 class="card-title">https://github.com/leonardodev18-bot</h5>
-      </div>
-      <div class="d-flex align-items-center ms-5 mt-3">
-        <img src="./img/o-email.png" style="width: 40px;" class="me-3">
-        <h5 class="card-title">leonardodev18@gmail.com</h5>
-      </div>
+        <div class="d-flex align-items-center ms-5 mt-3">
+          <img src="./img/ligar.png" style="width: 40px;" class="me-3">
+          <h5 class="card-title">(11 96576-9335)</h5>
+        </div>
+        <div class="d-flex align-items-center ms-5 mt-3">
+          <img src="./img/github.png" style="width: 40px;" class="me-3">
+          <h5 class="card-title">https://github.com/leonardodev18-bot</h5>
+        </div>
+        <div class="d-flex align-items-center ms-5 mt-3">
+          <img src="./img/o-email.png" style="width: 40px;" class="me-3">
+          <h5 class="card-title">leonardodev18@gmail.com</h5>
+        </div>
+      </section>
     </div>
   </main>
 

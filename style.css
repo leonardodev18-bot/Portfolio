@@ -11,3 +11,12 @@ body {
   height: 1px;
   background: linear-gradient(to right, white, transparent);
 }
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
